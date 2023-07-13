@@ -166,6 +166,7 @@ footer {
     var(--color-violetBlue),
     var(--color-lightRoyalBlue)
   );
+
   cursor: pointer;
 }
 .out-of {
