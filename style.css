@@ -48,9 +48,9 @@ footer {
   border-radius: 0 0 2rem 2rem;
   padding: 2rem 2.5rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+
   gap: 1.5rem;
 }
 .title {
@@ -109,7 +109,7 @@ footer {
 .reaction > p:nth-of-type(1)::before {
   content: url(assets/images/icon-reaction.svg);
   position: relative;
-  bottom: -10%;
+  bottom: -15%;
   margin-right: 0.75rem;
 }
 .memory {
@@ -121,7 +121,7 @@ footer {
 .memory > p:nth-of-type(1)::before {
   content: url(assets/images/icon-memory.svg);
   position: relative;
-  bottom: -10%;
+  bottom: -15%;
   margin-right: 0.75rem;
 }
 .verbal {
@@ -133,7 +133,7 @@ footer {
 .verbal > p:nth-of-type(1)::before {
   content: url(assets/images/icon-verbal.svg);
   position: relative;
-  bottom: -10%;
+  bottom: -15%;
   margin-right: 0.75rem;
 }
 .visual {
@@ -145,7 +145,7 @@ footer {
 .visual > p:nth-of-type(1)::before {
   content: url(assets/images/icon-visual.svg);
   position: relative;
-  bottom: -10%;
+  bottom: -15%;
   margin-right: 0.75rem;
 }
 .button {
@@ -155,6 +155,10 @@ footer {
   color: var(--color-white);
   padding: 1rem;
   border-radius: 2rem;
+}
+.out-of {
+  color: lightslategrey;
+  font-weight: var(--weight-heavy);
 }
 @media (min-width: 550px) {
   .test-card {
