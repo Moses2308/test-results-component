@@ -49,8 +49,9 @@ section.card__result {
   align-items: center;
   gap: 1.5rem;
 }
-.card__result > .title {
+.title {
   font-weight: var(--weight-heavy);
+  font-size: 1.25rem;
 }
 .text__rating {
   font-weight: var(--weight-heavy);
@@ -80,4 +81,12 @@ section.card__result {
   top: 64%;
   left: 35%;
   color: var(--color-lightSlateBlue);
+}
+section.card__summary {
+  padding: 2rem 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+.summary__category > p {
+  display: inline;
 }
