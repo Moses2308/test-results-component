@@ -148,3 +148,11 @@ section.card__summary {
   bottom: -10%;
   margin-right: 0.75rem;
 }
+.button {
+  text-align: center;
+  font-weight: var(--weight-heavy);
+  background-color: var(--color-darkGreyBlue);
+  color: var(--color-white);
+  padding: 1rem;
+  border-radius: 2rem;
+}
