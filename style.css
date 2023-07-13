@@ -38,7 +38,7 @@ header,
 footer {
   display: none;
 }
-section.card__result {
+.card__result {
   background-image: linear-gradient(
     var(--color-lightSlateBlue),
     var(--color-lightRoyalBlue)
@@ -46,7 +46,7 @@ section.card__result {
   color: var(--color-lightLavendar);
   text-align: center;
   border-radius: 0 0 2rem 2rem;
-  padding: 2rem 1.5rem;
+  padding: 2rem 2.5rem;
 
   display: flex;
   flex-direction: column;
@@ -80,13 +80,13 @@ section.card__result {
   left: 28%;
 }
 .bubble > p:nth-of-type(2) {
-  font-size: 18px;
+  font-size: 28%;
   position: absolute;
   top: 64%;
   left: 35%;
   color: var(--color-lightSlateBlue);
 }
-section.card__summary {
+.card__summary {
   padding: 2rem 1.5rem;
   display: grid;
   gap: 1rem;
@@ -155,4 +155,19 @@ section.card__summary {
   color: var(--color-white);
   padding: 1rem;
   border-radius: 2rem;
+}
+@media (min-width: 550px) {
+  .test-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 690px;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  .card__result {
+    border-radius: 2rem;
+  }
+  .bubble {
+    font-size: 5rem;
+  }
 }
