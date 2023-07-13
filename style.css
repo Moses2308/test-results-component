@@ -19,3 +19,29 @@
   --weight-heavy: 700;
   --weight-heaviest: 800;
 }
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+header,
+footer {
+  display: none;
+}
+section.card__result {
+  background-image: linear-gradient(
+    var(--color-lightSlateBlue),
+    var(--color-lightRoyalBlue)
+  );
+  color: var(--color-lightLavendar);
+  text-align: center;
+  border-radius: 0 0 2rem 2rem;
+  padding: 2rem 1.5rem;
+}
+.card__result > .title {
+  font-weight: var(--weight-heavy);
+}
